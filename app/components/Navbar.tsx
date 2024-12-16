@@ -34,7 +34,7 @@ const Navbar = async () => {
 
 							<Link
 								className="text-gray-600 font-medium hover:text-gray-800"
-								href={`/user/${session?.id}`}
+								href={`/user/${session?.user?.id}`}
 							>
 								<span>{session?.user?.name}</span>
 							</Link>
