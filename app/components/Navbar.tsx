@@ -9,7 +9,7 @@ const Navbar = async () => {
 		<div className="px-5 py-3 bg-white shadow-sm font-work-sans">
 			<nav className="flex justify-between items-center">
 				<Link href="/">
-					<Image src="/logo.png" alt="logo" width={30} height={30} />
+					<Image src="/logo.png" alt="logo" width={144} height={30} />
 				</Link>
 
 				<div className="flex items-center gap-5 text-black">
@@ -29,7 +29,12 @@ const Navbar = async () => {
 									await signOut({ redirectTo: "/" });
 								}}
 							>
-								<button type="submit">Logout</button>
+								<button
+									className="text-gray-600 font-medium hover:text-gray-800"
+									type="submit"
+								>
+									Logout
+								</button>
 							</form>
 
 							<Link
